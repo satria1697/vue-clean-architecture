@@ -1,4 +1,3 @@
-import 'reflect-metadata'
 import { defineStore } from 'pinia'
 import { container } from 'tsyringe'
 import { computed, reactive } from 'vue'
