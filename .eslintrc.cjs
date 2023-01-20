@@ -57,7 +57,9 @@ module.exports = {
         ]
       }
     ],
-    '@typescript-eslint/no-unused-vars': 'error'
+    '@typescript-eslint/no-unused-vars': 'error',
+    'import/no-unresolved': 'off',
+    'import/namespace': 'off',
   },
   overrides: [
     {

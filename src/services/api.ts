@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from 'axios'
 import { ApiInterface } from '../interfaces/services/apiInterface'
 
 export class Api implements ApiInterface {
-  private client = axios.create({
+  client = axios.create({
     baseURL: 'https://dummyjson.com',
     timeout: 9000
   })
