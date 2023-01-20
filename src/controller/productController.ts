@@ -10,9 +10,9 @@ interface productState {
   isLoading: boolean
 }
 
-export const useProductStore = defineStore('products', () => {
+export const useProduct = defineStore('products', () => {
   const state = reactive<productState>({
-    isLoading: false,
+    isLoading: true,
     products: []
   })
   const productRepository = container.resolve(ProductRepository)
@@ -28,7 +28,6 @@ export const useProductStore = defineStore('products', () => {
   }
 
   return {
-    state,
     getData,
     productLength,
     productList,
